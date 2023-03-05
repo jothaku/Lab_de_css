@@ -1,34 +1,91 @@
+:root{ 
+--sky-blue:  #56C7FD;
+--purple : #A95FFF;
+--blackberry-purple: #5E7EFF;
+
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
   background-color: white;
-  background-attachment: fixed;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: italic;
 }
 
+.divisor {
+  height: 1px;
+  width: 90%;
+  background-color: black;
+}
 .Contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
   border: 1px solid black;
-  width: 72%;
-  margin: 1px;
-  padding: 15%;
+  border-radius: 15px;
+  width: 67%;
+  height: 90;
   background-color: whitesmoke;
 }
+
+.Left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 15px 0px 0px 15px;
+  gap: 10px;
+  width: 50%;
+  height: 90%;
+}
+
+.Right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0% 15px 15px 0px 
+  padding: 10px;
+  gap: 20px;
+  width: 60%;
+  height: 90%;
+}
+
 h1 {
   color: black;
 }
 
 h2 {
-  color: black;
-  background-color: #e3de4a;
-  padding: 10px;
-  border: 10px solid black;
-  border-radius: 10px;
-  width: 280px;
+  background: -webkit-linear-gradient(
+    var(--blackberry-purple),
+    var(--sky-blue)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--blackberry-purple);
 }
 
 .Text-Center {
   text-align: center;
 }
-.box {
-  border-color: black;
+
+.divisor {
+height: 1px;
+width: 90%;
+background-color: var(--blackberry-purple);
+
+
 }
